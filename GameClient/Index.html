@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/handsfree@8.3.0/build/lib/assets/handsfree.css" />
+    <script src="https://unpkg.com/handsfree@8.3.0/build/lib/handsfree.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+</head>
+
+<style>
+    #absolute {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 3px solid #73AD21;
+    }
+</style>
+
+<body>
+   <div id ="users">
+
+   </div>
+    <canvas class="graphic_canvas" id="absolute" width="1920px" height="1080px"></canvas>
+    <canvas class="menu_canvas" id="absolute" width="1920px" height="1080px"></canvas>
+</body>
+<script type="text/javascript" src="Settings.js"></script>
+<script type="text/javascript" src="utilites/HandsUtility.js"></script>
+<script type="text/javascript" src="models/OnDrawEventMode.js"></script>
+<script type="text/javascript" src="models/HandModel.js"></script>
+<script type="text/javascript" src="models/ButtonAI.js"></script>
+<script type="text/javascript" src="GraphicManager.js"></script>
+<script type="text/javascript" src="ButtonAIManager.js"></script>
+<script type="text/javascript" src="HandsTracker.js"></script>
+<script type="text/javascript" src="ServerConnection.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
